@@ -3,6 +3,7 @@
 
 module.exports = {
 
+
   development: {
     client: 'sqlite3',
     connection: {
@@ -13,11 +14,10 @@ module.exports = {
     },
     seeds:{
       directory: './api/seeds'
-    }
+    },
   },
-
   production:{
-    client: 'sqlite3',
+    client: 'pg',
     connection: {
       filename:  process.env.DATABASE_URL,
     },
@@ -28,4 +28,5 @@ module.exports = {
       directory: './api/seeds'
     }
   }
+
 }
