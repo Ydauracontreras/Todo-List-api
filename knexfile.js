@@ -15,5 +15,18 @@ module.exports = {
       directory: './api/seeds'
     },
   useNullAsDefault: true
+  },
+
+  production:{
+    client:'pg',
+    connection: {
+      filename: process.env.DATABASE_URL,
+      migrations:{
+      directory:'./api/migrations'
+    },
+    seeds:{
+      directory: './api/seeds'
+    },
+    },
   }
 };
