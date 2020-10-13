@@ -17,16 +17,13 @@ module.exports = {
     },
   },
   production:{
-    client: 'pg',
-    connection: {
-      filename:  process.env.DATABASE_URL,
-    },
-    migrations:{
-      directory:'./db/migrations'
-    },
-    seeds:{
-      directory: './db/seeds'
-    }
+      client: 'pg',
+      connection: process.env.DATABASE_URL,
+      migrations: {
+          directory: __dirname + '/db/migrations',
+        },
+      seeds: {
+          directory: __dirname + '/db/seeds',
   }
-
+  }
 }
