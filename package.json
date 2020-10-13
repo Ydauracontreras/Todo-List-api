@@ -26,10 +26,10 @@
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
-    "nodemon": "^12.16.3S"
+    "nodemon": "^2.0.4"
   },
 
   "engines": {
-    "node": "0.10.x"
+    "node": "^12.16.3"
 }
 }
