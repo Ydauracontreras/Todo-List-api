@@ -1,4 +1,4 @@
-const server = require('./api/server');
+const server = require('./server');
 
 const HOST = 'ec2-75-101-232-85.compute-1.amazonaws.com'
 const PORT = 5432;
