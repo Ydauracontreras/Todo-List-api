@@ -13,8 +13,7 @@ module.exports = {
     },
     seeds:{
       directory: './api/seeds'
-    },
-  useNullAsDefault: true
+    }
   },
 
   production:{
