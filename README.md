@@ -1,0 +1,41 @@
+# TODO-APP
+
+## Common setup
+
+Clone the repo and install the dependencies.
+
+```bash
+git clone https://github.com/lauraizco24/TodoAppBack
+
+cd the-example-app.nodejs
+```
+
+```bash
+npm install
+```
+
+
+## Steps for read-only access
+
+To start the express server, run the following
+
+```bash
+npm run start
+```
+Open [http://localhost:3000](http://localhost:3000) and take a look around.
+
+
+
+| Endpoint      | HTTP   | Description                         |
+| ------------- | ------ | ----------------------------------- |
+| `/todos `     | GET    | Retrive all the TODO                |
+| `/todos:id `  | GET    | Retrive an specific TODO with `id`  |
+| `/todos `     | POST   | Create a new TODO                |
+| `/todos/:id ` | PUT    | Update a TODO video with `id`    |
+| `/todos/:id ` | DELETE | Remove a TODO                    |
+| `/todos/:id/status ` | DELETE | Remove a TODO                    |
+
+## License
+
+2020 Laura Izquierdo
+
