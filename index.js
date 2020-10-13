@@ -1,4 +1,4 @@
-const server = require('./api/server');
+const app = require('./api/server');
 
 
-server.set('port', (process.env.PORT || 5000))
+app.set('port', (process.env.PORT || 5000))
