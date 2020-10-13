@@ -22,10 +22,10 @@ module.exports = {
       filename:  process.env.DATABASE_URL,
     },
     migrations:{
-      directory:'./api/migrations'
+      directory:'./db/migrations'
     },
     seeds:{
-      directory: './api/seeds'
+      directory: './db/seeds'
     }
   }
 
