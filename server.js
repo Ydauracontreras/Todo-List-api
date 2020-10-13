@@ -104,7 +104,24 @@ const {id} = req.params
 })
 
 
-
+app.put('/todos/:id/status' , async (req, res) =>{
+    const id = req.params.id
+    const status = req.body.status
+    if(!status){
+        return res.status(400).json({message: 'You must include a status in your request'})
+    }
+        try{
+            
+       const updateResult = await knex('todos').where({id: id}).update({status: status})
+       console.log(updateResult)
+            res.status(200).json({message:"the Status was succesfully updated"})
+        }
+        catch{
+           console.log(err)
+           return res.status(400).json({message: 'you have an stupid error'})
+       }
+        
+    })
 
 
 module.exports = app;
