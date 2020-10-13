@@ -110,10 +110,8 @@ app.put('/todos/:id/status' , async (req, res) =>{
     if(!status){
         return res.status(400).json({message: 'You must include a status in your request'})
     }
-        try{
-            
-       const updateResult = await knex('todos').where({id: id}).update({status: status})
-       console.log(updateResult)
+        try{     
+       await knex('todos').where({id: id}).update({status: status})
             res.status(200).json({message:"the Status was succesfully updated"})
         }
         catch{
