@@ -34,8 +34,3 @@ Open [http://localhost:3000](http://localhost:3000) and take a look around.
 | `/todos/:id ` | PUT    | Update a TODO video with `id`    |
 | `/todos/:id ` | DELETE | Remove a TODO                    |
 | `/todos/:id/status ` | DELETE | Remove a TODO                    |
-
-## License
-
-2020 Laura Izquierdo
-
