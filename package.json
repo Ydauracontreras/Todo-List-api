@@ -1,20 +1,16 @@
 {
-
-  
   "name": "node-todo-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- 
-"scripts": {
-"dev": "react-scripts start",
-"start": "serve -s build",
-"build": "react-scripts build",
-"test": "react-scripts test --env=jsdom",
-"eject": "react-scripts eject",
-"heroku-postbuild": "npm run build"
-},
-  
+  "scripts": {
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -28,8 +24,7 @@
   "devDependencies": {
     "nodemon": "^2.0.4"
   },
-
   "engines": {
     "node": "^12.16.3"
-}
+  }
 }
