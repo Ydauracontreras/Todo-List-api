@@ -5,7 +5,7 @@
 Clone the repo and install the dependencies.
 
 ```bash
-git clone https://github.com/lauraizco24/TodoAppBack
+git clone https://github.com/Ydauracontreras/Todo-List-api/
 
 cd the-example-app.nodejs
 ```
@@ -31,6 +31,6 @@ Open [http://localhost:3000](http://localhost:3000) and take a look around.
 | `/todos `     | GET    | Retrive all the TODO                |
 | `/todos:id `  | GET    | Retrive an specific TODO with `id`  |
 | `/todos `     | POST   | Create a new TODO                |
-| `/todos/:id ` | PUT    | Update a TODO video with `id`    |
+| `/todos/:id ` | PUT    | Update a TODO with `id`    |
 | `/todos/:id ` | DELETE | Remove a TODO                    |
 | `/todos/:id/status ` | DELETE | Remove a TODO                    |
